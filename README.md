@@ -1,8 +1,6 @@
 # Snake And Ladder
 Discord Bot Snake and Ladder game without Snake and Ladder :rofl:
 
-This game is just the basics and can be developed as broadly and freely as possible
-
 ## Command
 prefix = '.'
 - snl (to play the game)
