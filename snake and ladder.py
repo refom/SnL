@@ -433,7 +433,10 @@ async def room_game(game):
 
 	async def cek2(game, user, channel):
 		if game.list_player():
-			if user.player_id not in game.list_player():
+			tempss = []
+			for pl in game.list_player():
+				tempss.append(pl.player_id)
+			if user.player_id not in tempss:
 				game.join(user)
 				await channel.send(f"> `{user.player_name} Joined the Game`")
 		else:
